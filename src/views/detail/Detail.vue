@@ -114,6 +114,7 @@ export default {
       product.image=this.topImages[0]
       product.title=this.getGoods.title
       product.desc=this.getGoods.desc
+      product.price=this.getGoods.lowPrice
       product.iid=this.iid
 
       this.$store.dispatch('addToCart',product);

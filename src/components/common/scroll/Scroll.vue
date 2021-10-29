@@ -20,6 +20,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    observeDOM:{
+      type:Boolean,
+      default:false
+    }
   },
   data() {
     return {
@@ -34,6 +38,7 @@ export default {
       click: true,
       probeType: this.probeType,
       pullUpLoad: this.pullUpLoad,
+      observeDOM:this.observeDOM,
       /* observeImage: {
         debounceTime: 100, 
       }, */

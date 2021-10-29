@@ -5,6 +5,7 @@ export default {
   },
   [ADD_TO_CART](state,newProduct){
     newProduct.count=1
+    newProduct.isChecked=true
     state.carList.push(newProduct)
   }
   
