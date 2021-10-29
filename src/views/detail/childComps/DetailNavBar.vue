@@ -33,6 +33,7 @@ export default {
     methods: {
       barClick(index){
         this.currentIndex=index;
+        this.$emit('tabClick',index)
       },
       backClick(){
         this.$router.go(-1);
